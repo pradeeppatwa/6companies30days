@@ -1,3 +1,24 @@
 Overlapping rectangles
 //https://practice.geeksforgeeks.org/problems/overlapping-rectangles1924/1/
 
+class Solution {
+  public:
+    int doOverlap(int L1[], int R1[], int L2[], int R2[]) {
+        // code here
+        if(L1[0] > R2[0] || L2[0] > R1[0]) // rect side by side
+        return false;
+        
+        if(R1[1]> L2[1] || R2[1] > L1[1]) // for rect above and below
+        return false;
+        
+        return true;
+    }
+};
+
+
+algorithm :
+1. consider 2 rectangle with (l1, r1) and (l2, r2) 
+2. compare l1 with r2 and l2 with r1 
+2. when rect and above and below position then if l2 > r1 and l1 > r2 then they are not overlapping return false
+3. when rects and side by side then if r1 > l2 and r2 > l1 then they are not overlapping so return false 
+4. else all other rectangles must be overlapping so return true
