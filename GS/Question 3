@@ -1,0 +1,35 @@
+Count the subarrays having product less than k 
+//https://practice.geeksforgeeks.org/problems/count-the-subarrays-having-product-less-than-k1708/1/
+
+##solution : 
+
+class Solution{
+  public:
+    int countSubArrayProductLessThanK(const vector<int>& a, int n, long long k) {
+       if(n==0) return 0;
+       int start = 0, end = 0 , result = 0;
+       long long p = 1;
+       while(end<n)
+       {
+           p *= a[end];
+           
+           while(p>k)
+           {
+               p /= a[start];
+               start++;
+           }
+           if(p<k)
+           result += end-start+1; // only consider index values
+           end++;
+       }
+       return result;
+    }
+};
+
+
+algorithm:
+we have used sliding window method where we have used start and end pointer this is also know as 2 pointers
+1. both pointers point to same index and end pointer will increase as we multiply every element unless p>k
+2. when product is greater then divide that element and increase start point to adjacent elment.
+3. if product p<k then add the count of subarrays in result.
+4. return results which contain count of subarrays.
