@@ -1,0 +1,31 @@
+Run Length Encoding
+https://practice.geeksforgeeks.org/problems/run-length-encoding/1/
+
+solution :
+
+string encode(string src)
+{     
+  //Your code here 
+  string s="";
+  int counter = 1;
+    for(int i=0;i<src.size();i++){
+        s+=src[i];
+         while(src[i]==src[i+1] && (i+1)<src.size()){
+         counter++;
+         i++;
+     }
+   
+     s+=to_string(counter);
+     counter=1;
+
+  }
+  return s;
+}    
+
+
+algorithm :
+1. create s and set counter to 1.
+2. for i till the size of input string 
+3. add 1st letter in s then count the occuring of that letter and increase counter and then index
+4. add counter value in s and again set counter as 1 for other new letter
+5. print final string s
