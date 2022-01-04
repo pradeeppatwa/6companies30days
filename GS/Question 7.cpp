@@ -31,7 +31,7 @@ int main() {
         K = 1 // Starting position
 Output : 2
 The first item will be given to 1st 
-position. Second (or last) item will 
+position. Second (or last) item will  
 be delivered to 2nd position
 
 Input : N = 5 
