@@ -1,0 +1,41 @@
+Ugly Numbers 
+https://practice.geeksforgeeks.org/problems/ugly-numbers2254/1/#
+
+solution:
+
+class Solution{
+public:	
+	// #define ull unsigned long long
+	/* Function to get the nth ugly number*/
+	ull getNthUglyNo(int n) {
+	    // code here
+	   vector <long long int > ug(n+1);
+    
+     ug[0]=1;
+    
+   long long int c2(0),c3(0),c5(0);
+    
+    for(int i=1;i<=n;i++)
+    {
+        ug[i] =min({2*ug[c2] , 3*ug[c3] , 5*ug[c5]});
+        
+        if(2*ug[c2]==ug[i])
+            c2++;
+            
+       if(3*ug[c3]==ug[i])
+            c3++;
+            
+       if(5*ug[c5]==ug[i])
+            c5++;
+	    }
+	    return ug[n-1];
+	}
+};
+
+
+here we have dynamic programming
+so we are starting a no. with 1 and multiplying every num with 2, 3, 5 and considering only min in all of them and any num is taken them we are 
+incresing its index value.
+after adding all the ugly num in array we can print index num of any given ugly number.
+
+source : https://www.youtube.com/watch?v=kSDI_iOiGQY
