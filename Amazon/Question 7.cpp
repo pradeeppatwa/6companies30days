@@ -18,7 +18,7 @@ class Solution {
 		        while(!q.empty() && arr[q.front()-'a']!=1){
 		            q.pop();
 		        }
-		        if(q.empty()){
+		        if(q.empty()){               //if any letter is repeated and their is no new letter then print #
 		            A[i]='#';
 		        }else{
 		            A[i]=q.front();
