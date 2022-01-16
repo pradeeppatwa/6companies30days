@@ -14,6 +14,6 @@ class Solution{
             s = string(1, r + 'A') + s;
             n = n / 26;
         }
-        return s;
+        return s; 
     }
 };
