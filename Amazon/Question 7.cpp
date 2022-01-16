@@ -1,9 +1,9 @@
 //First non-repeating character in a stream
 //https://practice.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1
 
-//solution :
+//solution : 
 
-class Solution {
+class Solution { 
 	public:
 		string FirstNonRepeating(string A){
 		    // Code here
