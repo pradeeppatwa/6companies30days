@@ -1,7 +1,7 @@
 //Count ways to N'th Stair(Order does not matter) 
 //https://practice.geeksforgeeks.org/problems/count-ways-to-nth-stairorder-does-not-matter1322/1/
 
-class Solution
+class Solution 
 {
     public:
     //Function to count number of ways to reach the nth stair 
