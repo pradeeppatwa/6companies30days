@@ -3,7 +3,7 @@
 
 //solution : 
 
-class Solution { 
+class Solution {   
 	public:
 		string FirstNonRepeating(string A){
 		    // Code here
