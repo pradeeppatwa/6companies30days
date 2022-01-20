@@ -19,7 +19,7 @@ void DFS_sort(map<char,vector<char>>& Adj, set<char>&visited, char v, string& or
           {
               if(s1[i]!=s2[i])
               {
-                Adj[s1[i]].push_back(s2[i]);
+                Adj[s1[i]].push_back(s2[i]); 
                 return;
               }
           }
