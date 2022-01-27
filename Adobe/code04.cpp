@@ -32,7 +32,7 @@ public:
                 }
             }
         }
-        if(dp[N][sum/2] == true){
+        if(dp[N][sum/2] == true){ 
             return 1;
         }
         return 0;
