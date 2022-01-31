@@ -1,5 +1,5 @@
 // Leaders in an array
-
+ 
 vector<int> leaders(int a[], int n){
         // Code here
           vector<int> v;
