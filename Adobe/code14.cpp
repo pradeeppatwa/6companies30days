@@ -28,7 +28,7 @@ pair<int,int> findSmallestRange(int arr[][N], int n, int k)
        {
            auto temp1=*(ms.begin());
            
-           ms.erase(ms.begin());
+           ms.erase(ms.begin());   
            
            int val1=get<0>(temp1);
            int arr_pos1=get<1>(temp1);
