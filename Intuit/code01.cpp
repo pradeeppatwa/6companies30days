@@ -1,4 +1,4 @@
-// Partition a set into two subsets such that the difference of subset sums is minimum
+// Partition a set into two subsets such that the difference of subset sums is minimum 
 
 int minDifference(int arr[], int n)  { 
 	    // Your code goes here
