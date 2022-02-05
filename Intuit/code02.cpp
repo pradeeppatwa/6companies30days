@@ -30,7 +30,7 @@ bool dfs(vector<vector<char>>& board,string word,int i,int j,int pos)
         {
             for(int j=0;j<n;j++)
             {
-                if(board[i][j]==word[0])
+                if(board[i][j]==word[0]) 
                 {
                     if(dfs(board,word,i,j,0))
                     return true;
