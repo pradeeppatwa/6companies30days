@@ -4,7 +4,7 @@ int getValue(const string& str, int i, int m)
 {
     if (i + m > str.length()) 
         return -1;
- 
+  
     int value = 0;
     for (int j = 0; j < m; j++)
     {
