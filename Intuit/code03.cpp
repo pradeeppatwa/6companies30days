@@ -2,7 +2,7 @@
 
 int getValue(const string& str, int i, int m)
 {
-    if (i + m > str.length())
+    if (i + m > str.length()) 
         return -1;
  
     int value = 0;
