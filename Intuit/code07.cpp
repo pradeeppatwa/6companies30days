@@ -2,7 +2,7 @@
 
 class Solution {
 public:
-    int DayCounter(vector<int>& w, int cap)
+    int DayCounter(vector<int>& w, int cap) 
     {
         int ans=1,holder=0;
         for(auto i:w)
