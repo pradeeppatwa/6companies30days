@@ -2,7 +2,7 @@
 
 class Solution {
 public:
-    int numberOfBoomerangs(vector<vector<int>>& points) {
+    int numberOfBoomerangs(vector<vector<int>>& points) { 
         unordered_map<int,int>mp;
         int ans=0;
         for(int i=0;i<points.size();i++){
