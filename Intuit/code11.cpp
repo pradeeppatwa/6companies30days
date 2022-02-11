@@ -30,6 +30,6 @@ Node* rec_construct(vector<vector<int>>& grid,int row_start,int row_end,int col_
     Node* construct(vector<vector<int>>& grid) 
     {
         int n=grid.size();
-        Node* ans = rec_construct(grid,0,n,0,n,n);
+        Node* ans = rec_construct(grid,0,n,0,n,n); 
         return ans;
     }
