@@ -3,7 +3,7 @@
 void add_edge(vector<int> adj[],int i,int j)
     {
         adj[j].push_back(i);
-    }
+    } 
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) 
     {
         vector<int> adj[numCourses];
