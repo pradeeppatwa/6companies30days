@@ -3,7 +3,7 @@
 class Solution { 
 public:
     int minSwaps(vector<vector<int>>& grid) {
-        int n = grid.size();
+        int n = grid.size(); 
         int ans = 0;
         vector<int> t; 
         
