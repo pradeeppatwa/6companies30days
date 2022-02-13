@@ -1,6 +1,6 @@
 // Minimum Swaps to Arrange a Binary Grid
 
-class Solution {
+class Solution { 
 public:
     int minSwaps(vector<vector<int>>& grid) {
         int n = grid.size();
