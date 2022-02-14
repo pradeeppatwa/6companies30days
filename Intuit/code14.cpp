@@ -6,7 +6,7 @@ public:
         int res = -1,n = grid.size(),m = grid[0].size();
         vector<vector<int>>dp(n+2,vector<int>(m+2,1e9));
         bool p = 0;
-        
+         
         for(int i = 1;i<=n;i++){
             for(int j = 1;j<=m;j++){
                 if(grid[i-1][j-1] == 1){
