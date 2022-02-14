@@ -1,7 +1,7 @@
 // As Far from Land as Possible
 
 class Solution {
-public:
+public: 
     int maxDistance(vector<vector<int>>& grid) {
         int res = -1,n = grid.size(),m = grid[0].size();
         vector<vector<int>>dp(n+2,vector<int>(m+2,1e9)); 
