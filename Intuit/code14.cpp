@@ -4,7 +4,7 @@ class Solution {
 public:
     int maxDistance(vector<vector<int>>& grid) {
         int res = -1,n = grid.size(),m = grid[0].size();
-        vector<vector<int>>dp(n+2,vector<int>(m+2,1e9));
+        vector<vector<int>>dp(n+2,vector<int>(m+2,1e9)); 
         bool p = 0;
          
         for(int i = 1;i<=n;i++){
