@@ -4,7 +4,7 @@ class Solution {
 public:
     bool winnerOfGame(string colors) {
         int alice = 0,bob = 0;
-        int i = 0;
+        int i = 0; 
         while(i < colors.size())
         {
             int countA = 0,countB = 0;
