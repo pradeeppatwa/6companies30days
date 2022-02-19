@@ -2,7 +2,7 @@
 
 class Solution {
   public:
-  
+   
     // Convert a given tree to a tree where every node contains sum of values of
     // nodes in left and right subtrees in the original tree
     void toSumTree(Node *root)
