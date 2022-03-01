@@ -5,7 +5,7 @@ public:
     int divide(int dividend, int divisor) {
         if(dividend == 0) return 0;
         if(divisor == 1) return dividend;
-        if(divisor == -1) return dividend == INT_MIN ? INT_MAX : 0 - dividend;
+        if(divisor == -1) return dividend == INT_MIN ? INT_MAX : 0 - dividend; 
         bool neg = (dividend < 0) ^ (divisor < 0);
         int count = 0;
         long long a = abs(dividend);
